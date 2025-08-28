@@ -1,42 +1,3 @@
-/* Gallery Grid 3x3 */
-.gallery-bg {
-    background: #18181b;
-    padding: 40px 0;
-}
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-.gallery-grid img {
-    width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
-    background: #222;
-    display: block;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-.gallery-grid img:hover {
-    transform: scale(1.04);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
-}
-@media (max-width: 900px) {
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 600px) {
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-    .gallery-bg {
-        padding: 20px 0;
-    }
-}
 .container-flex{
     display: flex; 
 }
@@ -71,6 +32,7 @@
     border-radius: 15px;
     padding: 10px;
     display: grid;
+    /* main content memanjang sendiri di kiri, footer, sidebar, header di kanan bertumpuk */
     grid-template-areas: "main footer"
                          "main sidebar"
                          "main header";
@@ -80,15 +42,23 @@
 }
 .header {
     grid-area: header;
+    height: 60px;
+}
+
+.header {
+    grid-area: header;
+    /* tinggi otomatis dari grid */
 }
 .sidebar {
     grid-area: sidebar;
+    /* tinggi otomatis dari grid */
 }
 .main {
     grid-area: main;
 }
 .footer {
     grid-area: footer;
+    /* tinggi otomatis dari grid */
 }
 .wrap-3 {
     display: grid;
