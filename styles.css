@@ -1,0 +1,89 @@
+.container-flex{
+    display: flex; 
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    /* gap 20px */
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-orange{
+    background-color: orange;
+}
+
+.container-grid-2 {
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 10px;
+    display: grid;
+    /* main content memanjang sendiri di kiri, footer, sidebar, header di kanan bertumpuk */
+    grid-template-areas: "main footer"
+                         "main sidebar"
+                         "main header";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    min-height: 220px;
+}
+.header {
+    grid-area: header;
+    height: 60px;
+}
+
+.header {
+    grid-area: header;
+    /* tinggi otomatis dari grid */
+}
+.sidebar {
+    grid-area: sidebar;
+    /* tinggi otomatis dari grid */
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+    /* tinggi otomatis dari grid */
+}
+.wrap-3 {
+    display: grid;
+    grid-template-areas:
+    "anto kanan"
+    "anto kanan";
+    gap: 10px;
+}
+
+.wrap-3 div {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.wrap-3 .shell {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.wrap-3 .hero {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.wrap-3 .footer {
+    padding: 10px;
+    border: 1px solid black;
+}   
