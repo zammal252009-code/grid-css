@@ -1,52 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="profil lengkap siswa dengan berbagai elemen html">
+    <meta name="author" content="ABDULLAH AZZAM AL GHOZY">
+    <title>profil lengkap - ABDULLAH AZZAM AL GHOZY</title>
 </head>
 <body>
-    <section>
-        <div id="grid" class="container-grid">
-           <div class="bg-red"><strong>tebal</strong></div>
-           <div class="bg-yellow"><em>miring</em></div>
-           <div class="bg-green"><u>garis bawah</u></div>
-           <div class="bg-orange">tidak ada</div>
-
-           <div class="bg-red"><strong>tebal</strong></div>
-           <div class="bg-yellow"><em>miring</em></div>
-           <div class="bg-green"><u>garis bawah</u></div>
-           <div class="bg-orange">tidak ada</div>
-           <div class="bg-red"><strong>tebal</strong></div>
-           <div class="bg-yellow"><em>miring</em></div>
-           <div class="bg-green"><u>garis bawah</u></div>
-           <div class="bg-orange">tidak ada</div>
-        </div>
-    </section>
-
-    
-    <!-- Tambahan: contoh penggunaan class dari CSS -->
+    <!-- header section -->
+    <header>
+        <h1>ABDULLAH AZZAM AL GHOZY</h1>
+        <p><em>Siswa SMA IT HSI yang passionate dengan teknologi</em></p>
+    </header>
 
 
-    <section>
-        <div class="container-grid-2">
-            <div class="header bg-yellow">Header</div>
-            <div class="sidebar bg-green">Sidebar</div>
-            <div class="main bg-orange">Main Content</div>
-            <div class="footer bg-red">Footer</div>
-        </div>
-    </section>
+    <!-- navigation -->
+     <nav>
+        <ul>
+            <li><a href="#tentang">tentang</a></li>
+            <li><a href="#hobi">hobi</a></li>
+            <li><a href="#prestasi">prestasi</a></li>
+            <li><a href="#jadwal">jadwal</a></li>
+        </ul>
+     </nav>
 
+     <!-- about section -->
+      <section id="tentang">
+        <h2>tentang saya</h2>
+        <p>Halo! Saya <strong>ABDULLAH AZZAM AL GHOZY</strong>,siswa kelas <strong>kelas 11</strong>
+            di <em>SMA IT HSI</em>saya sangat <mark>tertarik dengan teknologi</mark>dan sedang belajar web development 
+            dan saya bercita-cita menjadi seorang programmer yg syar'i.
+        </p>
 
+        <p>Saya percaya seperti yang dikatakan <q>Steve Jobs: Innovation distinguishes
+        between a leader and a follower.</q></p>
+        </section>
 
-    <section>
-        <div class="wrap-3">
-            <div class="shell">shell</div>
-            <div class="hero">hero</div>
-            <div class="footer">footer</div>
-        </div>
-    </section>
-    
+        <!-- quote section -->
+         <section>
+            <h2>Quote Inspiratif</h2>
+            <blockquote>
+                <p>The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                <cite>- Chinese Proverb</cite>
+            </blockquote>
+         </section>
+
+         <!-- hobies -->
+          <section id="hobi">
+            <h2>hobi dan minat</h2>
+            <h3>hobi utama:</h3>
+            <ul>
+                <li>💻<strong>desain</strong>- di figma, canva</li>
+                <li>📚<strong>Membaca</strong>- Novel fiksi dan non-fiksi</li>
+                <li>🎮<strong>Gaming</strong>- Strategy dan puzzle games</li>
+                <li>🎵<strong>musik</strong>- Mendengarkan dan belajar gitar</li>
+            </ul>
+
+            <!-- programming skills -->
+             <h3>Skill Programming:</h3>
+             <p>Saya baru belajar HTML dan sudah bisa membuat struktur dasar insyaallah:</p>
+             <pre><code>&lt;!DOCTYPE html&gt;
+                   &lt;html lang="id"&gt;
+                   &lt;head&gt;
+                       &lt;title&gt;My Website&lt;/title&gt;
+                   &lt;/head&gt;
+                   &lt;body&gt;
+                       &lt;h1&gt;Hello World!&lt;/h1&gt;
+                   &lt;/body&gt;
+                   &lt;/html&gt;</code></pre>
+
+                <p>Untuk menjalankan kode HTML, saya menggunakan shortcut <kbd>ctrl</kbd>+<kbd>0</kbd>
+                di browser</p>
+          </section>
+
+          <!-- Achievements -->
+           <section id="prestasi">
+            <h2>prestasi</h2>
+            <h3>Prestasi Akademik:</h3>
+            <ol>
+                <li>blm ada</li>
+            </ol>
+            <h3>Aktivitas Ekstrakurikuler:</h3>
+             <ol>
+                <li>blm ada</li>
+             </ol>
+           </section>
+
+           <!-- Schedule -->
+            <section id="jadwal">
+                <h2>jadwal belajar mingguan</h2>
+                <table border="1" style="border-collapse: collapse;">
+                    <caption>Jadwal Belajar Mandiri di Rumah</caption>
+                    <thead>
+                        <tr>
+                            <th>waktu</th>
+                            <th>senin</th>
+                            <th>selasa</th>
+                            <th>rabu</th>
+                            <th>kamis</th>
+                            <th>jum'at</th>
+                            <th>Weekend</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><time datetime="19:00">19:00-20:00</time></td>
+                            <td>Matematika</td>
+                            <td>bahasa indonesia</td>
+                            <td>bahasa inggris</td>
+                            <td>fisika</td>
+                            <td>kimia</td>
+                            <td rowspan="2">Proyek HTM</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="20:00">20:00-21:00</time></td>
+                            <td>html/css</td>
+                            <td>membaca</td>
+                            <td>html/css</td>
+                            <td>membaca</td>
+                            <td>Review</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- time and dates -->
+                <section>
+                    <h2>Timeline Belajar HTML</h2> 
+                    <li><time datetime="2025-08-20">20 agustus 2025</time>- Mulai belajar HTML dasar</li>
+                    <li><time datetime="2025-08-23">23 agustus 2025</time>- Menguasai tag-tag dasar</li>
+                    <li><time datetime="2025-08-27">27 agustus 2025</time>- mulai belajar css</li>
+                    <li><time datetime="2025-11-30">30 november 2025</time>- Buat website pertama</li>
+                </section>
+
+                <section>
+                    <details>
+                        <summary>Bagaimana teman-teman bisa menghubungi saya?</summary>
+                        <address>
+                            <strong>ABDULLAH AZZAM AL GHOZY</strong><br>
+                            email: <a href="mailto:zammal252009@gmail.com" target="_blank">zammal252009@gmail.com</a><br>
+                            instagram: <a href="https://www.instagram.com/zamm.al_ghozy.13/">zamm.al_ghozy.13</a><br>
+                            github: <a href="https://github.com/zammal252009-code" target="_blank">zammal252009-code</a><br>
+                         </address>
+                     </details>
+                </section>
+
+                
+
+                <!-- Footer -->
+                 <footer>
+                    <hr>
+                    <p>
+                        <small>
+                            Halaman ini dibuat dengan menggunakan HTML. <br>
+                            Last updated: <time datetime="2025-09-3">3 september 2025</time>
+                        </small>
+                    </p>
+                 </footer>
 </body>
 </html>
